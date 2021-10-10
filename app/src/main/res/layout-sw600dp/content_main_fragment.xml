@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <FrameLayout
+        android:id="@+id/content_framee"
+        android:layout_marginBottom="@dimen/_45sdp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:weightSum="5"
+            android:padding="@dimen/_10sdp"
+            android:background="@drawable/header_shape"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp">
+            <ImageView
+                android:id="@+id/txt_feed"
+                android:textColor="@android:color/white"
+                android:layout_width="0dp"
+                android:src="@drawable/circle_feed"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                />
+            <ImageView
+                android:id="@+id/txt_search"
+                android:textColor="@android:color/white"
+                android:layout_width="0dp"
+                android:src="@drawable/ic_search"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                />
+
+            <ImageView
+                android:id="@+id/txt_friends"
+                android:src="@drawable/ic_about"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"/>
+            <ImageView
+                android:id="@+id/txt_favr"
+                android:src="@drawable/ic_favorite"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"/>
+            <ImageView
+                android:id="@+id/txt_wish"
+                android:src="@drawable/ic_local_drink_white"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+</RelativeLayout>

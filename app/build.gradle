@@ -1,0 +1,86 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+def BaseUrl = '' + BaseUrl + '' ?: '"Url???"'
+def STRING = 'String'
+
+
+android {
+    compileSdkVersion 29
+    defaultConfig {
+
+        applicationId "com.hamxidesigner.wine.app"
+        minSdkVersion 23
+        targetSdkVersion 29
+
+        versionCode 2
+        versionName "2.0"
+        multiDexEnabled true
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        each { type ->
+            type.buildConfigField STRING, 'BaseUrl', BaseUrl
+        }
+        dataBinding {
+            enabled true
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
+}
+
+dependencies {
+    api group: "com.navisens", name: "motiondnaapi", version: "1.8.12", changing: true
+    api "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.3.72"
+    api 'androidx.appcompat:appcompat:1.2.0'
+
+    api 'com.android.support:appcompat-v7:'
+    api 'androidx.cardview:cardview:1.0.0'
+    api 'com.makeramen:roundedimageview:2.3.0'
+    api 'com.google.code.gson:gson:2.8.6'
+    api 'com.karumi:dexter:5.0.0'
+    api 'com.reginald.swiperefresh:library:1.1.2'
+    api 'com.intuit.ssp:ssp-android:1.0.6'
+    api 'com.intuit.sdp:sdp-android:1.0.6'
+    api 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    api 'androidx.constraintlayout:constraintlayout:2.0.1'
+    annotationProcessor 'androidx.lifecycle:lifecycle-compiler:2.2.0'
+    api 'pl.droidsonroids.gif:android-gif-drawable:1.2.19'
+    api 'com.kaopiz:kprogresshud:1.2.0'
+    api 'com.github.ybq:Android-SpinKit:1.4.0'
+    api 'com.intuit.ssp:ssp-android:1.0.6'
+    api 'com.intuit.sdp:sdp-android:1.0.6'
+    api 'com.kaopiz:kprogresshud:1.2.0'
+    api 'com.github.ybq:Android-SpinKit:1.4.0'
+    api 'com.hbb20:ccp:2.3.7'
+    api 'de.hdodenhof:circleimageview:3.1.0'
+    api 'com.github.aabhasr1:OtpView:v1.1.2-ktx' // kotlin
+    api 'com.github.bumptech.glide:glide:4.11.0'
+    api 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    api 'io.reactivex.rxjava2:rxjava:2.2.12'
+    api "com.jakewharton.rxbinding2:rxbinding:2.2.0"
+    api 'com.google.firebase:firebase-auth:19.3.2'
+    api 'com.google.firebase:firebase-core:17.5.0'
+    api 'com.kaopiz:kprogresshud:1.2.0'
+    api "androidx.multidex:multidex:2.0.1"
+    api 'com.google.firebase:firebase-database:19.4.0'
+    api 'com.google.firebase:firebase-firestore:21.6.0'
+    api 'com.google.firebase:firebase-storage-ktx:19.2.0'
+    api 'com.karumi:dexter:5.0.0'
+    api 'com.snatik:storage:2.1.0'
+    api 'no.danielzeller.blurbehindlib:blurbehindlib:1.0.0'
+    api 'com.github.jgabrielfreitas:BlurImageView:1.0.1'
+    api 'com.github.broakenmedia:MultiContactPicker:1.8.5'
+    api 'com.airbnb.android:lottie:3.4.0'
+
+}
+apply plugin: 'com.google.gms.google-services'
+

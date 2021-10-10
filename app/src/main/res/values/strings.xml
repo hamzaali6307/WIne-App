@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">The Wine App</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="about_us">Like a fine wine, we\'ve got better with age and now wine apps are a thing. The world of wine can be overwhelming, intimidating and complex with \'vionology\' confusing beginner wine enthusiasts wishing to learn more. Luckily, the experts at Cult Wines (www.wineinvestment.com) have put together a list of the best 5 wine apps to use when choosing your next drink. Tom Gearing, the managing director of Cult Wines and runner up in Season Eight of the BBC\'s \'The Apprentice\' notes wine apps are great for novice ent husiasts to get the closest they can to a conversation with a wine expert. Through apps you are able determine what key fragrances, tastes and regions you really like and that\'s a great starting point.\' With over a decade of fine wine investment and collection management services to a global audience, it\'s safe to say they know a thing or two about wines. So here is a rundown of the best 5 wine apps to make buying a bottle easier</string>
+    <string name="hamxidesigner_team"><![CDATA[Hamxidesigner & Team]]></string>
+    <string name="developed_by">Developed By</string>
+</resources>

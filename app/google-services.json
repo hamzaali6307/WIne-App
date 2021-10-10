@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "935544873714",
+    "firebase_url": "https://the-wine-app-d3176.firebaseio.com",
+    "project_id": "the-wine-app-d3176",
+    "storage_bucket": "the-wine-app-d3176.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:935544873714:android:09761770de6125cf4a266b",
+        "android_client_info": {
+          "package_name": "com.hamxidesigner.wine.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "935544873714-81h7d8rb9nhn3acegqmvvte4u10ug0vo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hamxidesigner.wine.app",
+            "certificate_hash": "e37185a462227375d562e3f62edabe550aa0b906"
+          }
+        },
+        {
+          "client_id": "935544873714-9uit7jhm3s2b8e455p3g00di1i92ks40.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUbGfu2o02QPyEqCyxLutpLO8X_ND2Bw4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "935544873714-9uit7jhm3s2b8e455p3g00di1i92ks40.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

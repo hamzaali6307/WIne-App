@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/relitive"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hamxidesigner.wine.app.Fragment.FragmentFeed">
+ <LinearLayout
+     android:visibility="gone"
+     android:padding="@dimen/_5sdp"
+     android:id="@+id/linear"
+     android:orientation="vertical"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:fontFamily="@font/advent_pro_thin"
+      android:text="Choose Latest"
+      android:textStyle="bold"
+      android:textSize="@dimen/_30sdp" />
+  <TextView
+      android:text="Wine of your choice"
+      android:textSize="@dimen/_15sdp"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"/>
+ </LinearLayout>
+ <androidx.recyclerview.widget.RecyclerView
+     android:id="@+id/recyclerview"
+     android:layout_below="@+id/linear"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"/>
+
+ <TextView
+     android:id="@+id/eror"
+     android:visibility="gone"
+     android:layout_centerVertical="true"
+     android:layout_centerHorizontal="true"
+     android:gravity="center"
+     android:fontFamily="@font/baloo_thambi"
+     android:textSize="@dimen/_20sdp"
+     android:textColor="@color/colorPrimary"
+     android:text="No favourite wine yet!"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>
